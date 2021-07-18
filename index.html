@@ -44,13 +44,14 @@ text-decoration:none;
 font-family:tahoma;
 color: darkgreen;
 text-align: center;
+opacity: 1;
 }
 
 .images-heading{
 font-family:tahoma;
-color:coral;
+color:white;
 font-size:2rem;
-border:1px solid lightcoral;
+border:1px solid white;
 border-radius:10px;
 }
 
@@ -60,6 +61,7 @@ text-align:center;
 
 .images-text-div{
 text-align:center;
+opacity:1;
 }
 
 .my-skills-text{
@@ -184,6 +186,13 @@ padding:15px;
 display:flex;
 align-items:center;
 justify-content:center;
+opacity: 1;
+}
+
+
+.design{
+background-image:url('digital.png');
+opacity: 0.8;
 }
 </style>
 
@@ -193,8 +202,11 @@ justify-content:center;
 
 
 <body>
+<div class="design">
 
-<b><a href="#demo" class="menu-heading" data-toggle="collapse">MENU</a></b>
+
+
+<a href="#demo" class="menu-heading" data-toggle="collapse">MENU</a>
 
 <div class="text-center navbar collapse" id="demo">
 <b>
@@ -210,13 +222,18 @@ justify-content:center;
 
 <br>
 <h1 class="name-heading">Shuaib Hossain Siam</h1>
-
+<p style="color:red; transform: translate(58.5%,0);">Freelancer </p>
 <br><br><br>
 <br>
-<div class="images-text-div"><p class="images-heading">Images &nbsp;&nbsp;&nbsp;</p></div>
+<br>
+<br>
+<br>
+<br>
+
 
 <br><br><br><br>
-
+</div>
+<br> 
 <div id="carouselExampleIndicators" class="carousel slide imagesSlide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -243,6 +260,11 @@ justify-content:center;
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
+
+
 
 <br><br><br><br><br>
 
@@ -276,12 +298,12 @@ justify-content:center;
 
 <h1 class="certifications-text">Certifications</h1>
 
-<br><br><br>
+<br>
 <br><br>
 
 <figure>
 
-<img src="ctf.jpg" alt="ctf" height="200" width="270">
+<img src="ctf.jpg" alt="ctf" height="200" width="270"  usemap="#ctf1">
 <figcaption>GOOGLE DIGITAL GARAGE</figcaption>
 
 </figure>
@@ -290,7 +312,7 @@ justify-content:center;
 
 <figure>
 
-<img src="ctf2.jpg" alt="ctf" height="200" width="270">
+<img src="ctf2.jpg" alt="ctf" height="200" width="270" usemap="#ctf2">
 <figcaption>GOOGLE ANALYTICS ACADEMY</figcaption>
 
 </figure>
@@ -299,7 +321,7 @@ justify-content:center;
 
 <figure>
 
-<img src="ctf3.jpg" alt="ctf" height="200" width="270">
+<img src="ctf3.jpg" alt="ctf" height="200" width="270" usemap="#ctf3">
 <figcaption>EDUCBA</figcaption>
 
 </figure>
@@ -308,10 +330,27 @@ justify-content:center;
 
 <div>
 <br><br><br>
-<a href="contacthire.html" class="hire">Hire Me</a>
+<a href="" class="hire">Hire Me</a>
  </div>
 </div>
 
+
+<map name="ctf1">
+
+  <area shape="rect" coords="0,0,270,200" href="ctf.jpg">
+ </map>
+
+
+<map name="ctf2">
+
+  <area shape="rect" coords="0,0,270,200" href="ctf2.jpg">
+ </map>
+
+
+<map name="ctf3">
+
+  <area shape="rect" coords="0,0,270,200" href="ctf3.jpg">
+ </map>
 <br><br><br><br><br>
 <footer class="footer">
 
@@ -351,6 +390,8 @@ justify-content:center;
 <br><br><br><br>
 
 <p style="color: white; text-align:center;">&copy; Copyright 2021 Shuaib Hossain Siam</p>
+<br>
+
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
